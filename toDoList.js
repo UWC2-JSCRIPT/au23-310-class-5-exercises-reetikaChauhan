@@ -1,7 +1,9 @@
 // If an li element is clicked, toggle the class "done" on the <li>
 const liEl = document.getElementsByTagName("li")[0]
-console.log(liEl)
-liEl.classList.toggle("done")
+liEl.addEventListener("click",() =>{
+  liEl.classList.toggle("done")
+})
+
 // If a delete link is clicked, delete the li element / remove from the DOM
 const deleteEl = document.querySelectorAll(".delete")[0]
 console.log(deleteEl)

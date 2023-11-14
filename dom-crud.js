@@ -6,7 +6,6 @@ const text = document.createTextNode("Buy Now!");
 anchor.appendChild(text)
 anchor.setAttribute("id","cta")
 const mainEl = document.getElementsByTagName("main")[0]
-console.log(mainEl)
 mainEl.appendChild(anchor)
 // or use pelement to insert after p tag [pelement.after(anchor)] works same.
 
@@ -16,7 +15,7 @@ mainEl.appendChild(anchor)
 // log to the console
 const imgelement = document.getElementsByTagName("img")[0];
 const colorattribute = imgelement.getAttribute('data-color')
-console.log(colorattribute)
+console.log('Data color attribute:',colorattribute)
 
 // Update the third <li> item ("Turbocharged"), 
 // set the class name to "highlight"
@@ -26,7 +25,6 @@ liElement.setAttribute('class','highlight')
 // Remove (delete) the last paragraph
 // (starts with "Available for purchase now…")
 const pElement = document.getElementsByTagName("p")[0]
-console.log(pElement)
 mainEl.removeChild(pElement)
 
 

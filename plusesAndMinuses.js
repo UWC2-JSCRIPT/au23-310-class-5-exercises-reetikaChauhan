@@ -19,7 +19,7 @@ mainEl.appendChild(buttonminus)
 const h1El = document.createElement("h1");
 h1El.setAttribute("id","counter")
 mainEl.appendChild(h1El)
-
+h1El.innerHTML = counter
 const plus = document.getElementById("plus")
 const minus = document.getElementById("minus")
 
